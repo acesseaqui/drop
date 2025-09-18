@@ -245,9 +245,8 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://dlzpblyjxiqfa.cloudfront.net/1430493554/offers/ecvnr19qjmis2qwljwitdc1ho');
+            background: url('https://dlzpblyjxiqfa.cloudfront.net/1430493554/offers/ecvnr19qjmis2qwljwitdc1ho') no-repeat center center;
             background-size: cover;
-            background-position: center;
             color: var(--white);
             text-align: center;
             padding: 80px 20px;
@@ -258,16 +257,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at center, transparent 10%, rgba(0, 0, 0, 0.5) 100%);
         }
 
         .hero-content {
@@ -908,6 +897,7 @@
             transition: var(--transition);
             width: 100%;
             font-size: 1rem;
+            display: block;
         }
 
         .btn-primary:hover {
@@ -1344,9 +1334,9 @@
     <section class="hero">
         <div class="particles" id="particles"></div>
         <div class="hero-content">
-            <h1>TudãoOfertas</h1>
+           <!-- <h1>TudãoOfertas</h1>
             <p>AQUI VOCÊ TEM TUDO AO SEU ALCANCE!</p>
-            <a href="#" class="hero-btn">VER PRODUTOS</a>
+            <a href="#" class="hero-btn">VER PRODUTOS</a> -->
         </div>
     </section>
 
@@ -1517,7 +1507,7 @@
                 <input type="email" placeholder="Seu melhor e-mail">
                 <button type="submit">Cadastrar</button>
             </form>
-        </div>
+            </div>
     </section>
 
     <footer>
@@ -1752,7 +1742,7 @@
                     toast.style.background = 'rgba(0, 0, 0, 0.8)';
                     toast.style.color = 'white';
                     toast.style.padding = '10px 20px';
-                    toast.style.borderRadius = '30px';
+                    toast.style.borrowRadius = '30px';
                     toast.style.zIndex = '1000';
                     toast.style.fontSize = '14px';
                     document.body.appendChild(toast);
