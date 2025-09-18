@@ -245,7 +245,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://dlzpblyjxiqfa.cloudfront.net/1430493554/products/owuhzhcemqiahnm9dywjj0nzw');
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://dlzpblyjxiqfa.cloudfront.net/1430493554/offers/ecvnr19qjmis2qwljwitdc1ho');
             background-size: cover;
             background-position: center;
             color: var(--white);
@@ -254,6 +254,10 @@
             margin-bottom: 40px;
             position: relative;
             overflow: hidden;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero::before {
@@ -263,7 +267,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at center, transparent 10%, rgba(0, 0, 0, 0.8) 100%);
+            background: radial-gradient(circle at center, transparent 10%, rgba(0, 0, 0, 0.5) 100%);
         }
 
         .hero-content {
@@ -277,13 +281,14 @@
             font-size: 2.5rem;
             margin-bottom: 20px;
             font-weight: 700;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
             font-size: 1.1rem;
             margin-bottom: 30px;
             opacity: 0.9;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
 
         .hero-btn {
@@ -648,6 +653,7 @@
             z-index: 2;
             max-width: 600px;
             margin: 0 auto;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
 
         .newsletter h2 {
@@ -1128,6 +1134,11 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                min-height: 350px;
+                padding: 60px 20px;
+            }
+            
             .hero h1 {
                 font-size: 2rem;
             }
@@ -1202,7 +1213,8 @@
 
         @media (max-width: 576px) {
             .hero {
-                padding: 60px 15px;
+                min-height: 300px;
+                padding: 40px 15px;
             }
             
             .hero h1 {
@@ -1332,9 +1344,9 @@
     <section class="hero">
         <div class="particles" id="particles"></div>
         <div class="hero-content">
-            <!--<h1>TudãoOfertas</h1>
+            <h1>TudãoOfertas</h1>
             <p>AQUI VOCÊ TEM TUDO AO SEU ALCANCE!</p>
-            <!---<a href="#" class="hero-btn">VER PRODUTOS</a>----->
+            <a href="#" class="hero-btn">VER PRODUTOS</a>
         </div>
     </section>
 
@@ -1500,7 +1512,7 @@
     <section class="newsletter">
         <div class="newsletter-content">
             <h2>Cadastre-se para receber nossas ofertas</h2>
-            <p>Receba as melhores promoções e novidades em primeira mão!</p>
+            <p>Receba as melhores promoções and novidades em primeira mão!</p>
             <form class="newsletter-form">
                 <input type="email" placeholder="Seu melhor e-mail">
                 <button type="submit">Cadastrar</button>
@@ -1657,7 +1669,7 @@
                 const particle = document.createElement('div');
                 particle.classList.add('particle');
                 
-                // Tamanho aleatório entre 3 и 8px
+                // Tamanho aleatório entre 3 e 8px
                 const size = Math.random() * 5 + 3;
                 particle.style.width = `${size}px`;
                 particle.style.height = `${size}px`;
